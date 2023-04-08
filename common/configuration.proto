@@ -93,3 +93,9 @@ message Capabilities {
 // if the need arises in the future.  For the time being, a capability being in the
 // capabilities map requires that that capability be supported.
 message Capability { }
+
+message AttestationCheckingParameters {
+    bool enableChecking = 1;
+    uint32 requiredNumberOfMessages = 2;
+    uint32 frequency = 3;
+}
